@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<style> 
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr 3fr 1fr); 
+        gap: 10px; 
+        padding: 20px; 
+        background-color: rgb(233, 233, 233); 
+    } 
+ 
+    .grid div { 
+        border-radius: 15px; 
+        font-size: 18px; 
+        display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px;
+    text-align: center;
+    } 
+ 
+    .grid div:nth-child(5), 
+    div:nth-child(11), 
+    div:nth-child(17) { 
+        background-color:  rgb(112, 169, 216); 
+        border-bottom-right-radius: 0; 
+    } 
+ 
+    .grid div:nth-child(2), 
+    div:nth-child(8), 
+    div:nth-child(14) { 
+        background-color: rgb(103, 52, 199); 
+        border-bottom-left-radius: 0; 
+    } 
+ 
+    .name { 
+        font-size: 20px; 
+        font-weight: bold; 
+    } 
+ 
+    .time { 
+        font-size: 15px; 
+        color: rgba(0, 0, 0, 0.74); 
+    } 
+ 
+    .text { 
+        padding-top: 15px; 
+        display: flex; 
+        flex-direction: column; 
+    } 
+ 
+    .avatar { 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        gap: 8px;
+    } 
+ 
+    div span img { 
+        padding: 4px; 
+        vertical-align: middle;
+        width: 60px; 
+    } 
+
+</style> 
+ 
+<body> 
+    <div class="grid"> 
+        <div class="avatar"  style = "text-align: right;justify-content: flex-end;"> 
+            <span class="text"> 
+                <span class="name">Ann</span> 
+                <span class="time">4 hours ago</span> 
+            </span> 
+            <span><img src="avatar_2.png" ></span> 
+        </div> 
+        <div >Lorem ipsum</div> 
+        <div></div> 
+        <div></div> 
+        <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus ipsam quae laborum eligendi fugiat in sapiente illo amet nam enim ad quaerat praesentium officia, velit, </div> 
+        <div class="avatar"  style = "text-align: left;justify-content: flex-start;"> 
+             <span><img src="avatar_1.png"></span> 
+            <span class="text"> 
+                <span class="name">Diego</span> 
+                <span class="time">4 hours ago</span> 
+            </span> 
+        </div> 
+        <div class="avatar"  style = "text-align: right;justify-content: flex-end;"> 
+            <span class="text"> 
+                <span class="name">Ann</span> 
+                <span class="time">4 hours ago</span> 
+            </span> 
+            <span><img src="avatar_2.png"></span> 
+        </div> 
+        <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus ipsam quae laborum eligendi fugiat in sapiente illo amet nam enim ad quaerat praesentium officia, velit, </div> 
+        <div></div> 
+        <div></div> 
+        <div >Lorem ipsum dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere culpa velit commodi voluptatem architecto et, accusamus obcaecati soluta laboriosam quod laborum optio reiciendis! Provident iste in eos molestias consectetur.sit amet consectetur adipisicing elit. Non possimus ipsam quae laborum eligendi fugiat in sapiente illo amet nam enim ad quaerat praesentium officia, velit, </div> 
+        <div class="avatar"  style = "text-align: left;justify-content: flex-start;"> 
+             <span><img src="avatar_1.png"></span> 
+            <span class="text"> 
+                <span class="name">Diego</span> 
+                <span class="time">3 hours ago</span> 
+            </span> 
+        </div> 
+        <div class="avatar"  style = "text-align: right;justify-content: flex-end;"> 
+            <span class="text"> 
+                <span class="name">Ann</span> 
+                <span class="time">3 hours ago</span> 
+            </span> 
+            <span><img src="avatar_2.png"></span> 
+        </div> 
+        <div >Sapiente illo amet nam enim ad
+quaerat praesentium officia, velit, </div> 
+        <div></div> 
+        <div></div> 
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus ipsam quae laborum eligendi fugiat in sapiente illo amet nam enim ad quaerat praesentium officia, velit, </div> 
+        <div class="avatar"  style = "text-align: left;justify-content: flex-start;"> 
+             <span><img src="avatar_1.png"></span> 
+            <span class="text"> 
+                <span class="name">Diego</span> 
+                <span class="time">2 hours ago</span> 
+            </span> 
+        </div> 
+    </div> 
+</body> 
+ 
+</html>
