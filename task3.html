@@ -10,50 +10,73 @@
     body {
         padding: 0;
         margin: 0;
+    
     }
-
+.all
+{
+    display: flex;
+    flex-direction: row;
+}
     .grid {
         display: grid;
-        background-color: rgb(195, 177, 225);
+        background-color: rgb(133, 113, 237);
         grid-template-columns: repeat(4, minmax(300px, 400px));
         justify-content: space-around;
+        overflow: auto; 
+        height: 100vh;
+       
     }
 
     .grid div {
         font-size: 18px;
         padding: 5px;
         height: 500px;
+
     }
 
     .grid div:nth-child(1) {
+        font-weight: bold;
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
         grid-column: 1/-1;
         height: 40px;
-        font-size: 25px;
+        font-size: 30px;
         display: flex;
         align-items: center;
-        background-color: aqua;
+        background-color: rgb(9, 32, 186);
+    color:white;
+    padding-left: 40px;;
     }
 
     .grid div:nth-child(2),
     div:nth-child(3),
     div:nth-child(4),
-    div:nth-child(5) {
+    div:nth-child(5),
+    div:nth-child(6){
         margin: 20px;
+        margin-top: 80px;
     }
 
     .block_big {
-        background-color: #00796b;
+        background-color: #acacac;
         padding: 10px;
         border-radius: 8px;
+        overflow:auto;
     }
 
     .title {
         font-size: 25px;
         display: flex;
         padding: 10px;
+        font-weight: bold;
+        color: white;
+
     }
 
     .block_small {
+        padding: 10px;
         margin-top: 0;
         margin-left: 10px;
         margin-right: 10px;
@@ -64,30 +87,286 @@
 
     .block_details {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 10px;
         font-size: 14px;
         color: #666;
+        padding: 10px;
+        width: 70%;
+
     }
-    .block_details span {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
+
+    .block_details img {
+        width: 15px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .avatar
+    {
+        display:flex;
+        justify-content: flex-end; 
+        padding: 0;
+    }
+    .avatar img {
+    width: 35px;
+}
+
+
 </style>
 
-<body>
+<body class = "all">
     <div class="grid">
-        <div>item-2</div>
+        <div>My Boards</div>
         <div class="block_big">
             <span class=title>To Do</span>
-            <p class="block_small">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <span class="block_details">kk;lk</span>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">4/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_3.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">1/3
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_3.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">7/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">6
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_2.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">0/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">4
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_1.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">6/10
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_1.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">1/3
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">0
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_4.png">
+                    </span>
+                    
+                </span>
             </p>
         </div>
 
-        <div>item-3</div>
-        <div>item-3</div>
-        <div>item-3</div>
+        <div class="block_big">
+            <span class=title>In Progress</span>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">4/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_1.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">1/3
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_1.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">7/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">6
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_2.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+        </div>
+
+        
+        <div class="block_big">
+            <span class=title>Test</span>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">4/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_4.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">1/3
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_2.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">7/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">6
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_3.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">7/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">6
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_2.png">
+                    </span>
+                    
+                </span>
+            </p>
+        </div>
+
+        <div class="block_big">
+            <span class=title>School</span>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">4/8
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_3.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+            <p class="block_small">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                <span class="details">
+                    <span class="block_details">
+                        <img src="justify_26.png">
+                        <img src="checkbox_26.png">1/3
+                        <img src="attach_26.png">2
+                        <img src="comments_26.png">2
+                    </span>
+                    <span class="avatar">
+                        <img src="avatar_3.png">
+                    </span>
+                    
+                </span>
+            </p>
+
+         
+        </div>
+
+
 
     </div>
 </body>
